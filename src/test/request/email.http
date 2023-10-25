@@ -1,0 +1,20 @@
+POST localhost:8080/test/sendMail
+Content-Type: application/json
+
+{
+  "recipient": "huytoan132@gmail.com",
+  "msgBody": "Test email content from waa.email.sender@gmail.com",
+  "subject": "Test email"
+}
+
+###
+POST localhost:8080/test/sendMailWithAttachment
+Content-Type: application/json
+
+{
+  "recipient": "huytoan132@gmail.com",
+  "msgBody": "Test email content from waa.email.sender@gmail.com",
+  "subject": "Test email",
+  "attachment": "logo.png"
+}
+

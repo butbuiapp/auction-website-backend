@@ -1,0 +1,28 @@
+### Login
+POST localhost:8080/api/v1/auth/token
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+### Register seller
+POST localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "email": "seller",
+  "password": "seller",
+  "role": "ROLE_SELLER"
+}
+
+### Register admin
+POST localhost:8080/api/v1/admins
+Content-Type: application/json
+
+{
+  "email": "admin",
+  "password": "admin"
+}
+

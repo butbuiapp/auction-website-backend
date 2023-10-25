@@ -1,0 +1,42 @@
+POST http://localhost:8080/api/v1/seller/products
+Content-Type: application/json
+Authorization: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJPbmxpbmUgQWN0aW9uIEFQSSIsInN1YiI6InNlbGxlckBnbWFpbC5jb20iLCJyb2xlcyI6WyJTRUxMRVIiXSwiaWF0IjoxNjk3NzYyOTQ1LCJleHAiOjE2OTc3NjY1NDV9.VdNpSgSvZu-uGmEqj8zxzR2Pw7lKCu4NuBoitgu6J481fi8jYokopr_Y6JKYA3gqfYYY577ZI1YGcdeqDDGzPWvUuGQx7RNH1Azv9EGEvZTG-QfQImiXTCawhy4R-oNYv2vIPYqfuE4SyaCHQaSUPMlIimUwDQLUZXGljsQAzEsFxZciteGQoetv-1EzMQ-FdlMMP99-yuSBto-138vxGwkO4SqxMHkPIOf-hLvNtPXijPl74MQvVxr5-c1a8Y81wscDfKGwsIX8c2CQXoLX_tAXZr2l-Tpwir53iY1mUX-6VoM5vMwHMDBy8EuEeH8L7Ewr4_i_aTGAvMXWk9ny08Uy-SNxKaV6Q7XLRFvcELsJXpSgRQPlwhtTw_IPeg4A0JZLfLvxWRnt2DQLNXecrKlI_wpvjg-vo823c7PzbTk8rfBQx5fUPYik6JBtybgtBD_XIl--ldwo6PlvF0ERvEIGUUFmStYRQxBmZHKk7_KAQToqDQXM5NtuhewefDfzT0I7oH3axghQLVZQLGg3x8OavU_ZLVId79gSVaNMKwVOCi4kDtzaBCLolMWgeXQVTs6HOgOF0WkShX5C7WidxHHpfL10jkMShVUu4vdaJSoMmksAeoIcAqRwUGX0o1x5E6_2jS6VhgJulRJu6mF78LRTcZo0PyqHn7NzB4FrsIU
+
+{
+  "name": "product 1",
+  "description": "description 1",
+  "deposit": 100,
+  "bidStartPrice": 50,
+  "bidDueDate": "2023-10-26",
+  "images": [
+    {"name": "img.png"}
+  ],
+  "status": "release"
+}
+
+###
+POST http://localhost:8080/api/v1/seller/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJPbmxpbmUgQWN0aW9uIEFQSSIsInN1YiI6InNlbGxlckBnbWFpbC5jb20iLCJyb2xlcyI6WyJTRUxMRVIiXSwiaWF0IjoxNjk3NzU0Njc4LCJleHAiOjE2OTc3NTgyNzh9.aiPWdEcgmuYQ3pn0ybMjy3tT58jDofPjcGDWkXJKxYLMwH4Kondrrlh28bafExbfn5wACs5BYQsnLiRYv50qLOk9yXUFXW1rZADs7M45U3sWYsv5TcReYQ92BWPySLMN95M7GuwlOZIDr_QzDziR7fAP5RpD99-nLClIwyZuSrZH2l69QzFH2BJtswCxz4qcGFl74CmOcOSs_TmvT7o1GitP3ip7vyJcx99XOIOT6iEZe_rpIwg8aG3KvW54Uo40g53JY93xLMs6cWWb0SpWz--yah5x9Wilm-7OJ-HcN_qc7F_Oq5xAeAvG1qHmAIjaYce5L1CVwT6zfUix8y5RRXh6DpR1dEyPCiWUyQ2Qo6ntgpCQUOSNwAuNR_TvxS0z26qCpYPUj52uaf0XnuR0URaNXLQDUzvCl0ag0r5ja-ROwR9erul1phBn6Dt-qfKxSPynGmHG8jwoDn3YrMBV8DlMtVnm2wj-wsRTSzJ8rmkagUIHwyR16Fn_LDvvuW4vKlxu5LOmEJld_U3AtkM5_hlEhf5Z_6bK38wzs9rEc9PuLpPahj369hPDA_b2r8pqVAVDoTnHq38X3vTIgvBcKGQHvUR8lNNkgtJGHCO-FaW0Dk4aUjjmao7Wh5VUmmJU6Lfb6uSKrr9WZdPI60U-jpg8d1pGDjc4_V7oYikVgVQ
+
+{
+"name": "product 2",
+"description": "description 1",
+"deposit": 100,
+"bidStartPrice": 50,
+"bidDueDate": "2023-10-26",
+"images": [
+],
+"status": "release"
+}
+
+###
+POST http://localhost:8080/api/v1/products/search
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJPbmxpbmUgQWN0aW9uIEFQSSIsInN1YiI6InNlbGxlckBnbWFpbC5jb20iLCJyb2xlcyI6WyJTRUxMRVIiXSwiaWF0IjoxNjk3NzU0Njc4LCJleHAiOjE2OTc3NTgyNzh9.aiPWdEcgmuYQ3pn0ybMjy3tT58jDofPjcGDWkXJKxYLMwH4Kondrrlh28bafExbfn5wACs5BYQsnLiRYv50qLOk9yXUFXW1rZADs7M45U3sWYsv5TcReYQ92BWPySLMN95M7GuwlOZIDr_QzDziR7fAP5RpD99-nLClIwyZuSrZH2l69QzFH2BJtswCxz4qcGFl74CmOcOSs_TmvT7o1GitP3ip7vyJcx99XOIOT6iEZe_rpIwg8aG3KvW54Uo40g53JY93xLMs6cWWb0SpWz--yah5x9Wilm-7OJ-HcN_qc7F_Oq5xAeAvG1qHmAIjaYce5L1CVwT6zfUix8y5RRXh6DpR1dEyPCiWUyQ2Qo6ntgpCQUOSNwAuNR_TvxS0z26qCpYPUj52uaf0XnuR0URaNXLQDUzvCl0ag0r5ja-ROwR9erul1phBn6Dt-qfKxSPynGmHG8jwoDn3YrMBV8DlMtVnm2wj-wsRTSzJ8rmkagUIHwyR16Fn_LDvvuW4vKlxu5LOmEJld_U3AtkM5_hlEhf5Z_6bK38wzs9rEc9PuLpPahj369hPDA_b2r8pqVAVDoTnHq38X3vTIgvBcKGQHvUR8lNNkgtJGHCO-FaW0Dk4aUjjmao7Wh5VUmmJU6Lfb6uSKrr9WZdPI60U-jpg8d1pGDjc4_V7oYikVgVQ
+
+{
+  "name": "",
+  "pageNumber": 1,
+  "pageSize": 3
+}

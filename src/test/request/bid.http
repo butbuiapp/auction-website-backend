@@ -1,0 +1,32 @@
+POST http://localhost:8080/api/v1/bids
+Content-Type: application/json
+
+{
+  "deposit": 10,
+  "depositDate": "2023-10-26",
+  "bidDate": "2023-10-26",
+  "bidPrice": 110,
+  "user": {
+    "email": "seller@gmail.com"
+  },
+  "product": {
+    "id": 1
+  }
+}
+
+###
+POST http://localhost:8080/api/v1/bids/deposit
+Content-Type: application/json
+
+{
+  "deposit": 10,
+  "depositDate": "2023-10-26",
+  "bidDate": "2023-10-26",
+  "bidPrice": 110,
+  "user": {
+    "email": "seller@gmail.com"
+  },
+  "product": {
+    "id": 1
+  }
+}
